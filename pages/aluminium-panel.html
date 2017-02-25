@@ -1,0 +1,11 @@
+---
+layout: category
+permalink: /aluminium-panel/
+category: products
+type-en: aluminium-panel
+title: Aluminium Panel
+---
+{% for post in site.categories["aluminium-panel"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}

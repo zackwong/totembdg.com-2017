@@ -1,0 +1,18 @@
+---
+layout: category
+permalink: /products/
+category: products
+title: Products
+keywords: aluminium sandwich sheet
+description: TOBOND aluminium composite panel and aluminum sheet as the famous metal building material supplier in aluminium sandwich sheet,scenery wall panel and aluminium exterior sheet period.
+---
+{% for post in site.categories["aluminium-composite-panel"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}{% for post in site.categories["aluminium-ceiling"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}{% for post in site.categories["aluminium-panel"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}

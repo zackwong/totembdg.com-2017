@@ -1,0 +1,33 @@
+---
+layout: pages
+permalink: /catalog/
+category: catalog
+title: Catalog
+keywords: Plastic sheet price
+description: Hot sale Alucobond price, Aluminum polyester sheet is named as aluminium plastic panel.It is famous on its lightweight,cheap price,long production life.
+---
+<section class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="main col-md-12">
+        <h1 class="page-title">{{ page.title }}</h1>
+        <div class="separator-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="white-bg section">
+    <div class="container">
+      <div class="isotope-container row grid-space-10">{% for post in site.categories["catalog"] %}
+        <div class="col-sm-6 col-md-4 isotope-item">
+          <div class="box-style-1 gray-bg">
+            <div class="overlay-container">
+              <img src="/images/catalog/{{ post.image }}.jpg" alt="{{ post.title }}">
+            </div>
+            <h3>{{ post.title }}</h3>
+            <a href="{{ site.url }}{{ post.url }}" class="btn btn-default">Download</a>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

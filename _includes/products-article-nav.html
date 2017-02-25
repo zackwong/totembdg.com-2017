@@ -1,0 +1,31 @@
+{% if page.type-en == 'aluminium-composite-panel' %}<div class="sidebar">
+  <div class="block clearfix">
+    <h4 class="title">Aluminium Composite Panel</h4>
+    <div class="separator"></div>
+    <nav>
+      <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-composite-panel"] %}
+        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>{% endif %}{% if page.type-en == 'aluminium-ceiling' %}<div class="sidebar">
+  <div class="block clearfix">
+    <h4 class="title">Aluminium Ceiling</h4>
+    <div class="separator"></div>
+    <nav>
+      <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-ceiling"] %}
+        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>{% endif %}{% if page.type-en == 'aluminium-panel' %}<div class="sidebar">
+  <div class="block clearfix">
+    <h4 class="title">Aluminium Panel</h4>
+    <div class="separator"></div>
+    <nav>
+      <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-panel"] %}
+        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>{% endif %}

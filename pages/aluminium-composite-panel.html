@@ -1,0 +1,13 @@
+---
+layout: category
+permalink: /aluminium-composite-panel/
+category: products
+type-en: aluminium-composite-panel
+title: Aluminium Composite Panel
+keywords: aluminium composite material
+description: TOTEM TOBOND aluminum composite panel,called as the aluminum plastic decorative sheet,is best replacement for the old building or public curtain wall.
+---
+{% for post in site.categories["aluminium-composite-panel"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}

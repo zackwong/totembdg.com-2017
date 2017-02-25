@@ -1,0 +1,13 @@
+---
+layout: category
+permalink: /aluminium-ceiling/
+category: products
+type-en: aluminium-ceiling
+title: Aluminium Ceiling
+keywords: aluminium ceiling
+description: Aluminium ceiling also named as clip-in ceiling, lay-in ceiling,metal square ceiling and 600x600 ceiling.Aluminium Ceiling is made of high quality aluminium alloy.
+---
+{% for post in site.categories["aluminium-ceiling"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}
