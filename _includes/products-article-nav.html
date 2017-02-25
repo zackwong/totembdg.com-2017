@@ -4,7 +4,7 @@
     <div class="separator"></div>
     <nav>
       <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-composite-panel"] %}
-        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+        <li class="{% if post.title == page.title %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
       </ul>
     </nav>
   </div>
@@ -14,7 +14,7 @@
     <div class="separator"></div>
     <nav>
       <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-ceiling"] %}
-        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+        <li class="{% if post.title == page.title %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
       </ul>
     </nav>
   </div>
@@ -24,7 +24,7 @@
     <div class="separator"></div>
     <nav>
       <ul class="nav nav-pills nav-stacked">{% for post in site.categories["aluminium-panel"] %}
-        <li class="{% if post.type-en == page.type-en %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
+        <li class="{% if post.title == page.title %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.tetle }}</a></li>{% endfor %}
       </ul>
     </nav>
   </div>
