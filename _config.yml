@@ -19,8 +19,7 @@ assets:
   sources:
     - _assets/js
     - _assets/css
-  js_compressor: uglifier
-  css_compressor: sass
-  cache: true
-  cache_assets: true
+  compress:
+    css: true
+    js: true
   gzip: []
