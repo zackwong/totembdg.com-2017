@@ -9,4 +9,4 @@ Disallow: /logreport/
 Disallow: /Error.html
 Disallow: /favicon.ico
 
-Sitemap: {{ site.url }}/Sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
