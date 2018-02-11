@@ -2,10 +2,8 @@
 layout: null
 ---
 User-agent: *
-Disallow: /assets/
-Disallow: /download/
 Disallow: /images/
-Disallow: /logreport/
+Disallow: /download/
 Disallow: /Error.html
 Disallow: /favicon.ico
 
