@@ -3,7 +3,7 @@ layout: null
 ---
 User-agent: *
 Disallow: /images/
-Disallow: /download/
+Disallow: /tobond-catalog-2015.html
 Disallow: /Error.html
 Disallow: /favicon.ico
 
