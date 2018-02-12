@@ -20,7 +20,7 @@ totembdg.com-2017
         index index.html;
         root /srv/totembdg.com-2017/_site;
         error_page 404 /Error.html;
-        location /download {
+        location /tobond-catalog-2015.html {
         auth_basic "Account password please contact customer service";
         auth_basic_user_file totembdg;
       }
