@@ -22,17 +22,13 @@ totembdg.com-2017
         error_page 404 /Error.html;
         location /tobond-catalog-2015.html {
         auth_basic "Account password please contact customer service";
-        auth_basic_user_file totembdg;
+        auth_basic_user_file /srv/totembdg.com-2017/totembdg;
       }
     }
 
 建立链接: ``sudo ln -s /etc/nginx/sites-available/totembdg.com /etc/nginx/sites-enabled/``
 
 重启nginx: ``sudo service nginx restart``
-
-编辑配置账号密码: ``sudo nano /etc/nginx/totembdg``
-
-    账号:密码，密码必须是crypt加密，在线工具：http://tool.oschina.net/htpasswd
 
 
 下载及生成网站
