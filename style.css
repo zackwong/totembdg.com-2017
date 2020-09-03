@@ -20811,42 +20811,6 @@ ul.tweets li span {
 	margin: 0 0 20px;
 }
 
-/* caption */
-.caption {
-	background-color: rgba(255, 255, 255, 0.85);
-	padding: 15px;
-	position: absolute;
-	bottom: 80px;
-	left: 80px;
-	width: 40%;
-	border: 1px solid #ffffff;
-}
-.caption .title {
-	margin-top: 0;
-}
-
-/* Medium devices (desktops, tablets less than 991px) */
-@media (max-width:991px) {
-	.caption {
-		width: 90%;
-		bottom: 40px;
-		left: 40px;
-	}
-}
-
-/* Small devices (tablets, phones less than 767px) */
-@media (max-width:767px) {
-	.caption {
-		width: 100%;
-		bottom: 30px;
-		left: 0;
-		position: relative;
-		background-color: #fafafa;
-		bottom: 0;
-		padding-bottom: 35px;
-	}
-}
-
 /* owl controls */
 .owl-controls {
 	width: 100%;
