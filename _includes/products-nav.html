@@ -4,7 +4,9 @@
       <div class="separator"></div>
       <nav>
         <ul class="nav nav-pills nav-stacked">
+          <li class="{% if page.type-en == 'veneer-punching' %}active{% endif %}"><a href="{{ site.url }}/veneer-punching/">Veneer Punching</a></li>
           <li class="{% if page.type-en == 'aluminium-composite-panel' %}active{% endif %}"><a href="{{ site.url }}/aluminium-composite-panel/">Aluminium Composite Panel</a></li>
+          <li class="{% if page.type-en == 'door-and-window-glass' %}active{% endif %}"><a href="{{ site.url }}/door-and-window-glass/">Door And Window Glass</a></li>
           <li class="{% if page.type-en == 'aluminium-ceiling' %}active{% endif %}"><a href="{{ site.url }}/aluminium-ceiling/">Aluminium Ceiling</a></li>
           <li class="{% if page.type-en == 'aluminium-panel' %}active{% endif %}"><a href="{{ site.url }}/aluminium-panel/">Aluminium Panel</a></li>
         </ul>
