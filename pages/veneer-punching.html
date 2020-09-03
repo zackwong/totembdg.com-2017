@@ -1,0 +1,13 @@
+---
+layout: category
+permalink: /veneer-punching/
+category: products
+type-en: veneer-punching
+title: Veneer Punching
+keywords: veneer-punching
+description: Aluminium ceiling also named as clip-in ceiling, lay-in ceiling,metal square ceiling and 600x600 ceiling.Aluminium Ceiling is made of high quality aluminium alloy.
+---
+{% for post in site.categories["veneer-punching"] %}<div class="col-sm-6 col-md-4">
+  <p align="center"><a href="{{ site.url }}{{ post.url }}"><img src="/images/products/{{ post.image }}.jpg" alt="{{ post.title }}"></a></p>
+  <p align="center">{{ post.title }}</p>
+</div>{% endfor %}
