@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #23527c;
+  color: #d0e3f3;
   text-decoration: none;
 }
 a:focus,
@@ -429,19 +429,19 @@ a.hover-color:hover, a.hover-color-foot:hover, a.hover-color-foot-white:hover, a
 .luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::after {
   transform: rotate(-45deg); }
 
-/*Navigation Color Green*/
-.luxbar-menu-green,
-.luxbar-menu-green .dropdown ul {
+/*Navigation Color Blue*/
+.luxbar-menu-blue,
+.luxbar-menu-blue .dropdown ul {
   background-color: #ffffff;
   color: #000; }
 
-.luxbar-menu-green .active {
-  background-color: #dff0d8; }
-.luxbar-menu-green .luxbar-item:hover {
+.luxbar-menu-blue .active {
+  background-color: #d0e3f3; }
+.luxbar-menu-blue .luxbar-item:hover {
   color: #337ab7; }
-.luxbar-menu-green .luxbar-hamburger span,
-.luxbar-menu-green .luxbar-hamburger span::before,
-.luxbar-menu-green .luxbar-hamburger span::after {
+.luxbar-menu-blue .luxbar-hamburger span,
+.luxbar-menu-blue .luxbar-hamburger span::before,
+.luxbar-menu-blue .luxbar-hamburger span::after {
   background-color: #000; }
 /*Typography*/
 h1, h2 {
@@ -513,7 +513,7 @@ p {
 .bg-white {
   background-color: #ffffff;
 }
-.bg-green {
+.bg-blue {
   background-color: #337ab7;
 }
 .bg-dark {
@@ -810,11 +810,11 @@ a.hover-color-foot-white {
   <body>
     <header id="luxbar" class="luxbar-fixed">
       <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox">
-      <div class="luxbar-menu luxbar-menu-right luxbar-menu-green">
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-blue">
         <div class="container">
           <ul class="luxbar-navigation">
             <li class="luxbar-header">
-              <a href="{{ site.url }}"><amp-img src="{{ site.url }}/images/assets/totembdg-logo.webp" class="margin-top-8" width="174" height="50" alt="EOQR Logo"><amp-img fallback src="{{ site.url }}/images/assets/totembdg-logo.png" class="margin-top-8" width="174" height="50" alt="EOQR Logo"></amp-img></amp-img></a>
+              <a href="{{ site.url }}"><img src="{{ site.url }}/images/assets/totembdg-logo.png" class="margin-top-8" width="174" height="50" alt="TOTEM TOBOND Logo"></a>
               <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-item {% if page.category == 'products' %}active{% endif %}"><a on="tap:productsnav.open">Products</a></li>
