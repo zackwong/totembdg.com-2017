@@ -1,0 +1,13 @@
+---
+layout: default1
+---
+<div class="bg-green">
+  <ol class="breadcrumb container">
+    <li><a href="{{ site.url }}">Home</a></li>
+    <li>/</li>{% if page.layout == 'project-article' or page.layout == 'news-article' %}
+    <li><a href="{{ site.url }}/{{ page.type-en }}/">{{ page.type }}</a></li>
+    <li>/</li>{% endif %}
+    <li class="active">{{ page.title }}</li>
+  </ol>
+</div>
+{{ content }}
