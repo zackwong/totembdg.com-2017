@@ -1,0 +1,11 @@
+<div class="row hidden-xs">{% for post in site.categories["news"] limit:4 %}
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    <div class="bg-white img-rounded margin-btm-30">
+      <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/news/{{ post.image }}.jpg" class="img-responsive center-block border-top-radius" alt="{{ post.title }}"></a>
+      <div class="padding-bg-white-list">
+        <p><a href="{{ site.url }}{{ post.url }}" class="hover-color-black">{{ post.title }}</a></p>
+        <p class="font-size-14 text-gery margin-btm-10">{{ post.date | date:"%d %b %Y" }}</p>
+      </div>
+    </div>
+  </div>{% endfor %}
+</div>
