@@ -843,7 +843,7 @@ a.hover-color-foot-white {
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 margin-btm-30">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 margin-btm-30">
             <p class="text-white font-size-20 font-weight-700">Contact Info</p>
             <p>Address</p>
             <p class="text-white font-size-16">{{ site.address }}</p>
@@ -854,13 +854,17 @@ a.hover-color-foot-white {
             <p>Phone</p>
             <p class="text-white font-size-16">{{ site.phone }}</p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 margin-btm-30 hidden-xs">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-btm-30 hidden-xs">
             <p class="text-white font-size-20 font-weight-700">Products</p>
             <p><a href="{{ site.url }}/veneer-punching/" class="hover-color-foot">Veneer Punching</a></p>
             <p><a href="{{ site.url }}/aluminium-composite-panel/" class="hover-color-foot">Aluminium Composite Panel</a></p>
             <p><a href="{{ site.url }}/door-and-window-glass/" class="hover-color-foot">Door And Window Glass</a></p>
             <p><a href="{{ site.url }}/aluminium-ceiling/" class="hover-color-foot">Aluminium Ceiling</a></p>
             <p><a href="{{ site.url }}/aluminium-panel/" class="hover-color-foot">Aluminium Panel</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 margin-btm-30 hidden-xs">
+            <p class="text-white font-size-20 font-weight-700">Last New</p>{% for post in site.categories["news"] limit:6 %}
+            <p><a href="{{ site.url }}{{ post.url }}" class="hover-color-foot">{{ post.title }}</a></p>{% endfor %}
           </div>
         </div>
         <div class="green-heading-list"></div>
