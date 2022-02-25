@@ -814,10 +814,25 @@ a.hover-color-foot-white {
               <a href="{{ site.url }}"><img src="{{ site.url }}/images/assets/totembdg-logo.png" width="174" height="50" alt="TOTEM TOBOND Logo"></a>
               <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
-            <li class="luxbar-item {% if page.category == 'products' %}active{% endif %}"><a on="tap:productsnav.open">Products</a></li>
+            <li class="luxbar-item {% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}">Home</a></li>
+            <li class="luxbar-item dropdown {% if page.category == 'about' %}active{% endif %}"><a>About</a>
+              <ul>
+                <li class="luxbar-item {% if page.title == 'Company Profile' %}active{% endif %}"><a href="{{ site.url }}/about/">Company Profile</a></li>
+                <li class="luxbar-item {% if page.title == 'Catalog' %}active{% endif %}"><a href="{{ site.url }}/catalog/">Catalog</a></li>
+                <li class="luxbar-item {% if page.title == 'FRANÇAIS' %}active{% endif %}"><a href="{{ site.url }}/french/">FRANÇAIS</a></li>
+              </ul>
+            </li>
+            <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a>Products</a>
+              <ul>
+                <li class="luxbar-item {% if page.type == 'Veneer Punching' %}active{% endif %}"><a href="{{ site.url }}/veneer-punching/">Veneer Punching</a></li>
+                <li class="luxbar-item {% if page.type == 'Aluminium Composite Panel' %}active{% endif %}"><a href="{{ site.url }}/aluminium-composite-panel/">Aluminium Composite Panel</a></li>
+                <li class="luxbar-item {% if page.title == 'Door And Window Glass' %}active{% endif %}"><a href="{{ site.url }}/door-and-window-glass/">Door And Window Glass</a></li>
+                <li class="luxbar-item {% if page.title == 'Aluminium Ceiling' %}active{% endif %}"><a href="{{ site.url }}/aluminium-ceiling/">Aluminium Ceiling</a></li>
+                <li class="luxbar-item {% if page.title == 'Aluminium Panel' %}active{% endif %}"><a href="{{ site.url }}/aluminium-panel/">Aluminium Panel</a></li>
+              </ul>
+            </li>
             <li class="luxbar-item {% if page.category == 'project' %}active{% endif %}"><a href="{{ site.url }}/project/">Project</a></li>
             <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
-            <li class="luxbar-item {% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About</a></li>
             <li class="luxbar-item {% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact</a></li>
           </ul>
         </div>
@@ -839,10 +854,14 @@ a.hover-color-foot-white {
             <p>Phone</p>
             <p class="text-white font-size-16">{{ site.phone }}</p>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 margin-btm-30 hidden-xs">
-            <p class="text-white font-size-20 font-weight-700">Products</p>{% for post in site.categories["products"] %}
-            <p><a href="{{ site.url }}{{ post.url }}" class="hover-color-foot">{{ post.title }}</a></p>{% endfor %}
-          </div>          
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 margin-btm-30 hidden-xs">
+            <p class="text-white font-size-20 font-weight-700">Products</p>
+            <p><a href="{{ site.url }}/veneer-punching/" class="hover-color-foot">Veneer Punching</a></p>
+            <p><a href="{{ site.url }}/aluminium-composite-panel/" class="hover-color-foot">Aluminium Composite Panel</a></p>
+            <p><a href="{{ site.url }}/door-and-window-glass/" class="hover-color-foot">Door And Window Glass</a></p>
+            <p><a href="{{ site.url }}/aluminium-ceiling/" class="hover-color-foot">Aluminium Ceiling</a></p>
+            <p><a href="{{ site.url }}/aluminium-panel/" class="hover-color-foot">Aluminium Panel</a></p>
+          </div>
         </div>
         <div class="green-heading-list"></div>
         <div class="text-center text-white margin-top-20">Copyright © 2012-2022 TOTEM BDG CO.,LTD(FoShan ShunDe) | <a href="{{ site.url }}/sitemap.xml" class="hover-color-foot-white" target="_blank">Sitemap</a></div>
