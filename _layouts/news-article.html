@@ -1,19 +1,18 @@
 ---
-layout: article
+layout: pages1
 ---
-<section class="main-container">
-  <div class="container">
-	<div class="row">
-	  <div class="main col-md-12">
-	    <h2 class="page-title" style="text-align:center">{{ page.title }}</h2>
-	    <article class="clearfix blogpost full">
-		  <div class="blogpost-body">
-			<div style="text-indent:2em">
-			  {{ content }}
-			</div>
-		  </div>
-		</article>
-	  </div>
-	</div>
-  </div>
-</section>
+<div class="bg-dark padding-btm-50">
+  <div class="container padding-top-50">
+    <div class="bg-white img-rounded padding-bg-white-article margin-btm-40">
+      <h1 class="font-size-25 text-black font-weight-500 text-center">{{ page.title }}</h1>
+      <p class="text-center">{{ page.date | date:"%d %b %Y" }}</p>
+      <div class="dark-heading"></div>
+      {{ content }}
+      <div class="dark-heading margin-top-50"></div>
+      <p class="margin-top-30">Keywords: <span class="text-blue font-weight-500">{{ page.keywords }}</span></p>
+      <p>Originally published <span class="text-blue font-weight-500">{{ page.date | date_to_string }}</span>, updated <span class="text-blue font-weight-500">{{ page.date | date_to_string }}</span>.</p>
+    </div>
+    {% include news-list.html %}
+    <p class="text-center"><a href="{{ site.url }}/news/" class="btn btn-blue btn-radius">More News</a></p>
+  </div>  
+</div>
