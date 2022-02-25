@@ -3,36 +3,24 @@ layout: pages
 permalink: /news/
 category: news
 title: News
+keywords: 
+description: 
 ---
-<img class="img-responsive" src="{{ site.url }}/images/pages/news.jpg" alt="{{ page.title }}">
-<section class="main-container">
-  <div class="container">
-	<div class="row">
-      <div class="main col-md-12">
-	    <h1 class="page-title">{{ page.title }}</h1>
-		<div class="separator-2"></div>
-		<div class="row">
-		  <div class="col-md-10 col-md-offset-1">
-		    <div class="timeline row">
-		      <div class="timeline-icon hidden-xs"><i class="fa fa-angle-double-up"></i></div>
-		      <div class="timeline-date-label clearfix">2015</div>{% for post in site.categories["news-2015"] %}
-		      <div class="timeline-item {{ post.position }} object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
-		        <article class="clearfix blogpost">
-		          <div class="overlay-container"><img src="{{ site.url }}/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></div>
-		          <div class="blogpost-body">
-		            <div class="post-info"><span class="day">{{ post.date | date:"%d" }}</span><span class="month">{{ post.date | date:"%b %Y" }}</span></div>
-		            <div class="blogpost-content">
-		              <header><h2 class="title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2></header>
-		              <p>{{ post.description }}</p>
-					</div>
-				  </div>
-				  <footer class="clearfix"><a class="pull-right link" href="{{ site.url }}{{ post.url }}"><span>Read more</span></a></footer>
-				</article>
-			  </div>{% endfor %}
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-   </div>
-</section>
+<div class="bg-dark">
+  <div class="container padding-top-40 padding-btm-40">
+    <h1 class="font-size-25 text-black font-weight-500 margin-btm-30">{{ page.title }}</h1>{% for post in site.categories["news"] %}
+    <div class="bg-white img-rounded margin-btm-30">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/news/{{ post.image }}.jpg" class="img-responsive img-rounded center-block" alt="{{ post.title }}"></a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-40">
+          <p class="font-size-25 text-black font-weight-500"><a href="{{ site.url }}{{ post.url }}" class="hover-color-black">{{ post.title }}</a></p>
+          <p class="margin-btm-20">{{ post.date | date:"%d %b %Y" }}</p>
+          <p>{{ post.description }}</p>
+          <a href="{{ site.url }}{{ post.url }}" class="btn btn-white btn-radius margin-top-20">Read More</a>
+        </div>
+      </div>
+    </div>{% endfor %}
+  </div>
+</div>
