@@ -6,37 +6,34 @@ title: Catalog
 keywords: Plastic sheet price
 description: Hot sale Alucobond price, Aluminum polyester sheet is named as aluminium plastic panel.It is famous on its lightweight,cheap price,long production life.
 ---
-<section class="main-container">
-  <div class="container">
-    <div class="row">
-      <div class="main col-md-12">
-        <h1 class="page-title">{{ page.title }}</h1>
-        <div class="separator-2"></div>
+<div class="bg-dark">
+  <div class="container padding-top-40 padding-btm-40">
+    <h1 class="font-size-25 text-black font-weight-500">{{ page.title }}</h1>
+    <div class="row margin-btm-20">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="bg-white img-rounded margin-btm-30">
+          <a href="https://drive.google.com/file/d/0B-1lqXGNaNNfOWQ0UVVYUjI4WlE/view?usp=sharing"><img src="{{ site.url }}/images/catalog/tobond-catalog-2015.jpg" class="img-responsive border-top-radius" layout="responsive" alt="TOBOND catalog 2015"></a>
+          <div class="padding-bg-white-list">
+            <p class="text-center margin-btm-10"><a href="https://drive.google.com/file/d/0B-1lqXGNaNNfOWQ0UVVYUjI4WlE/view?usp=sharing" class="hover-color-black">TOBOND catalog 2015</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="bg-white img-rounded margin-btm-30">
+          <a href="https://drive.google.com/file/d/0B-1lqXGNaNNfNXZNQlFJUkJONTQ/view?usp=sharing"><img src="{{ site.url }}/images/catalog/tobond-e-color-chart.jpg" class="img-responsive border-top-radius" layout="responsive" alt="TOBOND E-color Chart"></a>
+          <div class="padding-bg-white-list">
+            <p class="text-center margin-btm-10"><a href="https://drive.google.com/file/d/0B-1lqXGNaNNfNXZNQlFJUkJONTQ/view?usp=sharing" class="hover-color-black">TOBOND E-color Chart</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <div class="bg-white img-rounded margin-btm-30">
+          <a href="https://drive.google.com/file/d/0B-1lqXGNaNNfT3dKUkVoNENiVXc/view?usp=sharing"><img src="{{ site.url }}/images/catalog/tobond-color-chart.jpg" class="img-responsive border-top-radius" layout="responsive" alt="TOBOND Color Chart"></a>
+          <div class="padding-bg-white-list">
+            <p class="text-center margin-btm-10"><a href="https://drive.google.com/file/d/0B-1lqXGNaNNfT3dKUkVoNENiVXc/view?usp=sharing" class="hover-color-black">TOBOND Color Chart</p></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="white-bg section">
-    <div class="container">
-      <div class="isotope-container row grid-space-10">
-        <div class="col-sm-6 col-md-4 isotope-item">
-          <div class="box-style-1 gray-bg">
-            <div class="overlay-container">
-              <img src="/images/catalog/tobond-catalog-2015.jpg" alt="TOBOND catalog 2015">
-            </div>
-            <h3>TOBOND catalog 2015</h3>
-            <a href="{{ site.url }}/tobond-catalog-2015.html" class="btn btn-default">Download</a>
-          </div>
-        </div>{% for post in site.categories["catalog"] %}
-        <div class="col-sm-6 col-md-4 isotope-item">
-          <div class="box-style-1 gray-bg">
-            <div class="overlay-container">
-              <img src="/images/catalog/{{ post.image }}.jpg" alt="{{ post.title }}">
-            </div>
-            <h3>{{ post.title }}</h3>
-            <a href="{{ site.url }}{{ post.url }}" class="btn btn-default">Download</a>
-          </div>
-        </div>{% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
+</div>
