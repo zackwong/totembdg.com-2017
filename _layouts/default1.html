@@ -7,6 +7,7 @@
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="icon" href="{{ site.url }}/images/assets/favicon.png">
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
     <meta name="applicable-device" content="pc,mobile">
     <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -19,7 +20,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="{% if page.category == 'home' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
-    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/totembdg-icon.jpg">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/totembdg-icon.png">
     <meta name="apple-mobile-web-app-title" content="TOTEM">
     <style>
 body {
